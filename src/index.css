@@ -1,0 +1,20 @@
+@import "tailwindcss";
+:root {
+  --color-gray-200: #999999;
+  --color-gray-100: #e3e2e2;
+  --color-gray-300: #4c4546;
+  --color-gray-50 : #F5F3F3;
+}
+@theme {
+  --font-inter: "Inter", sans-serif;
+}
+
+/* Prevent orphan words globally */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  p, span, li, a {
+    text-wrap: pretty;
+  }
+}
